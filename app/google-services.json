@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "619639401071",
+    "project_id": "manoglani-pareekshak-99865",
+    "storage_bucket": "manoglani-pareekshak-99865.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619639401071:android:b6a15504614d5d3ae47b9a",
+        "android_client_info": {
+          "package_name": "com.example.manoglani"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619639401071-3ml8shrugv8albdg4kr97eaddv6clemj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJxN1B6p0sO6BY_kWnvAmvdAyp8gs3pT0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619639401071-3ml8shrugv8albdg4kr97eaddv6clemj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
