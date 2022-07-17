@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.manoglani">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,14 +16,22 @@
         android:theme="@style/Theme.ManoGlani"
         tools:targetApi="31">
         <activity
-            android:name=".loginActivity"
+            android:name=".readDataActivity"
             android:exported="false" />
+        <activity
+            android:name=".webViewerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".loginActivity"
+            android:exported="false"
+            android:noHistory="true" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".bootActivity"
-            android:exported="true">
+            android:exported="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

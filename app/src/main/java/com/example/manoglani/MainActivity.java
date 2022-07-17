@@ -2,12 +2,14 @@ package com.example.manoglani;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Toast;
 
 import com.example.manoglani.databinding.ActivityMainBinding;
 
@@ -23,20 +25,25 @@ public class MainActivity extends AppCompatActivity {
         binding.button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                binding.button.setVisibility(View.INVISIBLE);
-                WebSettings webSettings = binding.webView.getSettings();
-                webSettings.setJavaScriptEnabled(true);
+                Intent intent =new Intent(MainActivity.this,webViewerActivity.class);
+                startActivity(intent);
+            }
 
-//                binding.webView.setWebViewClient(new Callback());
-                binding.webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSc3ol-H--KmhA17zQd5aNccH0vo9lo80L0U2suo1K6GzD2M3w/viewform");
+
+        });
+        binding.readData.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent =new Intent(MainActivity.this,readDataActivity.class);
+                startActivity(intent);
             }
 
 
         });
 
 
-    }
 
+    }
 
 
 }
