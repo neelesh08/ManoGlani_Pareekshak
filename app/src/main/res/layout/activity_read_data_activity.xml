@@ -5,5 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".readDataActivity">
+        <EditText
+        android:id="@+id/subId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:hint="Enter the subject id"
+        app:layout_constraintEnd_toEndOf="parent"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        app:layout_constraintHorizontal_bias="0.446"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/fetch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:text="fetch data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.443"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subId" />
+
+        <TextView
+            android:id="@+id/getText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintHorizontal_bias=".5"
+            app:layout_constraintTop_toBottomOf="@+id/fetch" />
+
+    <Button
+        android:id="@+id/getEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="15sp"
+        android:text="send mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getText" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

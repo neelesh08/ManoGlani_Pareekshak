@@ -21,7 +21,7 @@ public class webViewerActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
                 WebSettings webSettings = binding.webView.getSettings();
                 webSettings.setJavaScriptEnabled(true);
-//                binding.webView.setWebViewClient(new Callback());
+
                  binding.webView.setWebViewClient(new WebViewClient());
                 binding.webView.loadUrl("https://docs.google.com/forms/d/e/1FAIpQLSc3ol-H--KmhA17zQd5aNccH0vo9lo80L0U2suo1K6GzD2M3w/viewform");
     }
@@ -32,16 +32,4 @@ public class webViewerActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-//        if(binding.webView.canGoBack()){
-//            binding.webView.goBack();
-//            Toast.makeText(this, "fill the form", Toast.LENGTH_SHORT).show();
-//
-//        }
-//        else{
-//            Toast.makeText(this, "fill the form", Toast.LENGTH_SHORT).show();
-//
-//
-//        }
-//    }
 }
