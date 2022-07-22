@@ -22,7 +22,7 @@ public class bootActivity extends AppCompatActivity {
                 startActivity(new Intent(bootActivity.this, loginActivity.class));
             }
 
-        },1000);
+        },3000);
 
 
     }

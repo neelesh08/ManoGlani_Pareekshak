@@ -5,33 +5,29 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".loginActivity">
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="99dp"
-        android:layout_height="53dp"
-
-        android:layout_marginTop="168dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
         android:padding="10sp"
         android:text="LOGIN"
         android:textAllCaps="false"
         android:textColor="#150E0E"
         android:textColorHighlight="#131010"
         android:textColorLink="#150E0E"
-        android:textSize="25dp"
+        android:textSize="45sp"
         android:textStyle="normal|bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
         android:id="@+id/email_editText"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="32dp"
-
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Enter your Email Id"
@@ -49,8 +45,7 @@
         android:id="@+id/password_edit_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-
+        android:layout_marginTop="50dp"
         android:drawablePadding="10dp"
         android:ems="10"
         android:hint="Enter your password"
@@ -67,7 +62,7 @@
         android:id="@+id/login_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="serif"
         android:text="LOGIN"
         android:textColor="#FFFFFF"
